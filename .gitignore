@@ -1,0 +1,105 @@
+### Core Ignore Rules (Recursive) ###
+# Logs
+**/logs/
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+
+# Build/Distribution
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/*.local
+**/build/
+**/.env/
+**/.venv/
+**/venv/
+**/env/
+**/ENV/
+
+### Editor/IDE ###
+**/.vscode/*
+!**/.vscode/extensions.json
+**/.idea/
+**/.DS_Store
+**/*.suo
+**/*.ntvs*
+**/*.njsproj
+**/*.sln
+**/*.sw?
+
+### Python/Django ###
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/*.so
+**/.Python
+**/*.egg-info/
+**/*.egg
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+**/db.sqlite3
+**/media/
+**/staticfiles/
+**/*.sqlite3
+**/*.pid
+**/*.db
+**/local_settings.py
+
+### Project Files ###
+**/develop-eggs/
+**/downloads/
+**/eggs/
+**/.eggs/
+**/lib/
+**/lib64/
+**/parts/
+**/sdist/
+**/var/
+**/wheels/
+**/.installed.cfg
+**/*.manifest
+**/*.spec
+**/pip-log.txt
+**/pip-delete-this-directory.txt
+**/.tox/
+**/.nox/
+**/.cache/
+**/nosetests.xml
+**/coverage.xml
+**/*.cover
+**/.hypothesis/
+**/.mypy_cache/
+**/.webassets-cache
+**/.scrapy/
+**/docs/_build/
+**/target/
+**/.ipynb_checkpoints/
+**/.python-version
+**/celerybeat-schedule
+**/*.sage.py
+**/.spyderproject
+**/.spyproject
+**/.ropeproject
+**/site/
+**/instance/
+
+### Security ###
+**/public.pem
+**/private.key
+**/secrets.env
+
+### OS-Specific ###
+# macOS
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+
+# Windows
+**/Thumbs.db
+**/ehthumbs.db
+**/[Dd]esktop.ini

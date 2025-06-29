@@ -1,0 +1,68 @@
+@import "../node_modules/leaflet/dist/leaflet.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css"; 
+
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.full-height-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.header-section {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px; 
+    flex-shrink: 0; 
+}
+
+
+.content-wrapper {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    overflow: hidden; 
+}
+
+.content-section {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; 
+    box-sizing: border-box; 
+    min-height: 50%; 
+}
+
+.section-a {
+    background-color: dimgray;
+}
+
+.section-b {
+    background-color: dimgray;
+}
+
+@media (min-width: 768px) { 
+    .content-wrapper {
+        flex-direction: row; 
+        gap: 10px; 
+    }
+
+    .content-section {
+        flex-basis: 0; 
+        flex-grow: 1; 
+    }
+}
+
