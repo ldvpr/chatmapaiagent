@@ -7,16 +7,17 @@ In Django App, in aichatmap/views.py add your Groq api key
     GROQ_API_KEY =  "<YOUR GROQ API KEY >"
     client = Groq( api_key=GROQ_API_KEY )
 
+Also , set the secret key and domain host in Django App.
+
 VueJS App, in utils.js file change the url in getAiResponse() function
 
     export  async  function  getAiResponse(userMsg, dataContext) {
        ...
        let  url  =  "<YOUR API ENDPOINT, WHERE DJANGO APP IS HOSTED>";
-
-Also , set the secret key and domain host in Django App.
+Build the VueJS App and copy the dist folder files into Django App in templates and static folder.
 
 #### **Architecture**
--   Type: Client-Server (Decoupled Frontend/Backend)  
+-  Type: Client-Server (Decoupled Frontend/Backend)  
 -   Frontend: Vue.js 
 -   Backend: Django     
 -   No Database: Uses browser in-memory data.
